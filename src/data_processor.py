@@ -6,7 +6,6 @@ This module contains the DataProcessor class for processing raw data.
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import LabelEncoder, StandardScaler, OneHotEncoder
-from src.base_data_processor import BaseDataProcessor
 
 
 class DataProcessor:
