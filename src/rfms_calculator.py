@@ -93,9 +93,9 @@ class RFMSCalculator(DataProcessor):
                     stability, on='AccountId_LabelEnc')
 
         scaler = StandardScaler()
-        rfms[['Recency', 'Frequency', 'Monetary', 'Stability']] =
-        scaler.fit_transform(
-            rfms[['Recency', 'Frequency', 'Monetary', 'Stability']])
+        rfms[['Recency', 'Frequency', 'Monetary', 'Stability']] = \
+            scaler.fit_transform(
+                rfms[['Recency', 'Frequency', 'Monetary', 'Stability']])
 
         rfms['RFMS_Score'] = 0.25 * rfms['Recency'] + 0.25 * \
             rfms['Frequency'] + 0.25 * rfms['Monetary'] + 0.25 * \
