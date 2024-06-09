@@ -13,22 +13,50 @@ This repository contains the code and resources for building a credit scoring mo
 1. Clone the repository:
     ```bash
     git clone https://github.com/amlaksil/credit-scoring-ml-model.git
-    cd credit-scoring-ml-model
-    ```
+		```
 
-2. Create and activate a virtual environment:
+2. Navigate to the project directory:
+		```bash
+		cd credit-scoring-ml-model
+		```
+
+3. Create and activate a virtual environment:
     ```bash
-    python -m venv venv
+    python3 -m venv venv
     source venv/bin/activate  # On Windows use `venv\Scripts\activate`
     ```
 
-3. Install the required packages:
+4. Install the required packages:
     ```bash
     pip install -r requirements.txt
     ```
 
+5. Download the dataset from Kaggle and place it in the `data/` directory.
+
+## Usage
+
+To run the main script, which loads data, processes it, calculates RFMS scores, defines features and targets, trains models, and evaluates model performance, use the following command:
+
+```bash
+python3 -m scripts.run_model
+```
+
+## Results
+
+The performance of the models is summarized below:
+
+| Metric    | Logistic Regression | Random Forest | Gradient Boosting Machines |
+|-----------|---------------------|---------------|----------------------------|
+| Accuracy  | 88.26%              | 100%          | 100%                       |
+| Precision | 85.71%              | 100%          | 100%                       |
+| Recall    | 84.11%              | 100%          | 100%                       |
+| F1 Score  | 84.91%              | 100%          | 100%                       |
+| ROC-AUC   | 95.65%              | 100%          | 100%                       |
+
 ## Contributing
-Contributions are welcome! Please create an issue first to discuss what you would like to change.
+
+Contributions are welcome! If you have any suggestions or changes you would like to discuss, please create an issue first.
 
 ## License
+
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
