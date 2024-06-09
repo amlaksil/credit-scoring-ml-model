@@ -3,6 +3,7 @@
 This repository contains the code and resources for building a credit scoring model using data provided by an eCommerce platform. The model categorizes users as high risk or low risk, selects observable features as predictors of default, assigns risk probability, assigns credit scores, and predicts the optimal amount and duration of loans.
 
 ### Directories
+
 - **notebooks**: Jupyter notebooks for exploratory data analysis and model development.
 - **scripts**: Scripts for data preprocessing, feature engineering, and model training.
 - **src**: Source code for the core functionality of the credit scoring model.
@@ -11,22 +12,26 @@ This repository contains the code and resources for building a credit scoring mo
 ## Installation
 
 1. Clone the repository:
+
     ```bash
     git clone https://github.com/amlaksil/credit-scoring-ml-model.git
-		```
+    ```
 
 2. Navigate to the project directory:
-		```bash
-		cd credit-scoring-ml-model
-		```
+
+    ```bash
+    cd credit-scoring-ml-model
+    ```
 
 3. Create and activate a virtual environment:
+
     ```bash
-    python3 -m venv venv
+    python -m venv venv
     source venv/bin/activate  # On Windows use `venv\Scripts\activate`
     ```
 
 4. Install the required packages:
+
     ```bash
     pip install -r requirements.txt
     ```
@@ -35,7 +40,7 @@ This repository contains the code and resources for building a credit scoring mo
 
 ## Usage
 
-To run the main script, which loads data, processes it, calculates RFMS scores, defines features and targets, trains models, and evaluates model performance, use the following command:
+Main script function to load data, process data, calculate RFMS scores, define features and target, train models, and evaluate models.
 
 ```bash
 python3 -m scripts.run_model
@@ -43,7 +48,7 @@ python3 -m scripts.run_model
 
 ## Results
 
-The performance of the models is summarized below:
+The model's performance:
 
 | Metric    | Logistic Regression | Random Forest | Gradient Boosting Machines |
 |-----------|---------------------|---------------|----------------------------|
@@ -55,7 +60,7 @@ The performance of the models is summarized below:
 
 ## Contributing
 
-Contributions are welcome! If you have any suggestions or changes you would like to discuss, please create an issue first.
+Contributions are welcome! Please create an issue first to discuss what you would like to change.
 
 ## License
 
